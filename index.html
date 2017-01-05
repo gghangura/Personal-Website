@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title>Gurjit Singh Ghangura</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="rounded_corners.jpg">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="story"></div>
+        <div id="typed-strings"> </div>
+        <script src="jquery.min.js"></script>
+        <script src="string.js"></script>
+        <script>
+            $(function () {
+                $("#story").typed({
+                    strings: [" \
+                        <h1>Hello!</h1> <br /> \
+                        <h1>Glad to see you here :)</h1> <br /> \
+                        <h2> My name is Gurjit Singh Ghangura.</h2> <br /> \
+                        <h2> ^100I'm an iOS Developer.</h2> <br /> \
+                        <h2> ^100I have a lot of experience in my field and I love the iOS environment.</h2> <br /><br /> \ <h2> ^100I have some experience in developing Android Application and using SQL Server Management Studio.</h2> <br /><br /> \
+                        <h2> I can work with languages like: Swift, Objective-C.</h2>\<br><h2> ^1000And I can also work with languages like: C#, Java, Html5, CSS3, Javascript, JQuery ...</h2><br /><br />\<h2> You can see my <a href='https://ca.linkedin.com/in/gurjit-singh-ghangura-b43a81b2' target='_blank'>LinkedIn</a>, <a href='https://github.com/gghangura' target='_blank'>GitHub</a> or download my <a href='files/Resume.pdf' target='_blank' download>Resume</a>. </h2> <br /><br /> \
+                        <h1>Or ^120... ^1000just say <a href='mailto:contact@gurjitghangura.com'>Hi</a>.</h1>"]
+                    , stringsElement: null
+                    , showCursor: false
+                    , typeSpeed: -10
+                    , startDelay: 0
+                    , contentType: "html"
+                    , loop: false
+                });
+                $(".outer").remove();
+            });
+            $(".buttonskip").click(function () {
+                $("#story").empty();
+                $("#story").typed({
+                    typeSpeed: -50
+                });
+            });
+        </script>
+    </body>
+</html>
